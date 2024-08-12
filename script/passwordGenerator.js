@@ -1,11 +1,11 @@
-function generatePassword(length) {
+ export function passwordGenerator(length) {
     const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercase = 'abcdefghijklmnopqrstuvwxyz';
     const numbers = '0123456789';
     const specialChars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
     const allChars = uppercase + lowercase + numbers + specialChars;
     if (length <= 0) {
-        throw new Error('Password length must be greater than 0');
+         alert('Password length must be greater than 0');
     }
 
     // Generate a random password
@@ -17,3 +17,4 @@ function generatePassword(length) {
 
     return password;
 }
+

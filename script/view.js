@@ -1,7 +1,10 @@
-import {passwordObject} from "../data/passwordObject.js"
+import {passwordObject} from "../data/passwordObject.js";
+import { StorePassword } from "../data/passwordObject.js";
+StorePassword();
+let newPasswordObject=JSON.parse(localStorage.getItem("password"))
 let viewHTML;
 console.log("hi")
-passwordObject.forEach((password)=>{
+newPasswordObject.forEach((password)=>{
 viewHTML+=`<div class="row text-centre">
             <div class="card" style="width:400px">
                 <div class="card-body">

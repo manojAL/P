@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create</title>
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/view.css">
+    <title>Generate</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/generate.css">
 </head>
 <body>
     <div class="header">
@@ -18,12 +18,18 @@
             <div class="logo"><a href="">Login</a></div>
         </div>
     </div>
-    <br>
-    <div class="margin-up"></div>
+
+    <div class="margin-top"></div>
+
     <div class="container">
-        
+        <form class="form-block">
+            <h3 class="h3">Generate your Password</h3><br>
+            <input type="text" class="form-control " id=" js-input-name" placeholder="Name"/><br>
+            <input type="text" class="form-control " id="js-input-number" placeholder="Type Number Of Inputs"/><br>
+            <button class="btn" id="js-confirm">Confirm Password</button>
+        </form>
     </div>
-    <script type="module" src="./script/view.js"></script>
     <script type="module" src="./data/passwordObject.js"></script>
+    
 </body>
 </html>
